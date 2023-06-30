@@ -1,0 +1,232 @@
+:root {
+  --primary-color: #212738;
+  --secondary-color:  whitesmoke;
+  --accent1-color: #D62828;
+  --accent2-color: #FBB13C;
+
+  --heading-font: "Fira Mono, Medium";
+  --paragraph-font: "Monofur Nerd Font Mono";
+}
+
+body {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    font: 1em var(--paragraph-font);
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+}
+
+a {
+    color: var(--accent2-color);
+    decoration: none;
+    padding-left: 2em;
+}
+
+article {
+    max-width: 800px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-link {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.article_img {
+    max-width: 350px;
+    padding: 2em;
+    position: absolute;
+    z-index: -1;
+}
+
+.article_icon {
+    max-width: 50px;
+    max-height: 50px;
+    padding: 1em;
+}
+
+.blog_entry {
+    display: inline-flex;
+}
+
+.logo {
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+    font: 3em var(--paragraph-font);
+    padding: 0.5em 0.5em 10px;
+}
+
+.menu-item {
+    padding-left:1em;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+}
+
+.card {
+    display: block;
+    padding:2em;
+    margin: 1em;
+    color: var(--secondary-color);
+    max-width: 350px;
+    min-width: 300px;
+    text-align: justify;
+    text-decoration: none;
+}
+
+.card:hover {
+    color: var(--accent2-color);
+    border: 2px solid var(--accent1-color);
+    border-radius: 30px;
+}
+
+#logo_link {
+    text-decoration: dashed;
+}
+
+.logo-img {
+    max-width: 10em;
+    padding-top: 1em;
+}
+
+#header-menu {
+    font: 1.5em var(--heading-font);
+    padding: 1em;
+    margin-top: -2em;
+    color: var(--accent1-color);
+    /* background-color: #218380 */
+    border-bottom: 1em;
+    border-color: #218380;
+    border-width: medium;
+}
+
+/* Contact card items (contact.html) */
+.contact_card {
+    /* Colors & Fonts */
+    display: inline-block;
+    background-color: #212738;
+    font: 1em "Monofur Nerd Font Mono";
+    /* Framing & Borders */
+    border: 2px solid whitesmoke;
+    border-radius: 30px;
+    padding-bottom: 30px;
+    max-width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact_item {
+    padding: 20px;
+    display: inline-flex;
+}
+
+.contact_item:hover {
+    color: var(--accent1-color);
+    color: #D62828;
+    border: #D62828 solid 2px;
+    border-radius: 30px;
+}
+
+#background_img {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#bio {
+    margin: -10px;
+}
+
+.contacts {
+    padding-top: 30px;
+    border: 100px;
+    border-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 10px; */
+    max-width: 75%;
+    text-align: center;
+    /* background-color: #D62828; */
+}
+
+#email_logo {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 10px;
+    margin: 20px;
+    /* margin-top: -3px; */
+}
+
+#email_addr {
+    margin-top: 35px;
+}
+
+#matrix_addr {
+    margin-top: 35px;
+}
+
+#matrix_logo {
+    margin: 20px;
+    /* margin-top: -3px; */
+    padding: 10px;
+}
+
+/* Blog feed */
+.article_preview {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-image: (linear-gradient(down, rgba(255,255,255,0) 0%, white 80%, white 100%));
+}
+
+/* Media calls for screen adjustment. */
+@media screen and (max-width: 2000px) {
+    .home-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .home-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .article_img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #contacts {
+        padding-top: 30px;
+        border: 100px;
+        /* border-top-width: 100px; */
+        /* border-color: white; */
+        display: none;
+        display: inline-flex;
+    }
+}
