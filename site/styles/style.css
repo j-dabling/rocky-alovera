@@ -90,6 +90,10 @@ article {
     border-radius: 30px;
 }
 
+.card-img {
+    max-width: 350px;
+}
+
 #logo_link {
     text-decoration: dashed;
 }
